@@ -12,16 +12,26 @@ const compat = new FlatCompat({
     allConfig: js.configs.all
 });
 
-export default [...compat.extends("eslint:recommended"), {
+export default [
+  ...compat.extends("eslint:recommended"),
+  {
     languageOptions: {
-        globals: {
-            ...globals.node,
-        },
+      globals: {
+        ...globals.node,
+        ...globals.browser,
+        ...globals.jquery,
+      },
+      parserOptions: {
+        sourceType: 'script',
+      },
     },
-
     rules: {
-        "no-multiple-empty-lines": "warn",
-        "no-var": "error",
-        "prefer-const": "error",
+      "no-multiple-empty-lines": "warn",
+      "no-var": "error",
+      "prefer-const": "error",
     },
-}];
+  },
+];
+// TODO: Fix ESlint ignore pattern
+// npx eslint . --ignore-pattern "public/contrib/*" works
+// video - 2. Finding Errors with Linting -> linting your codebase

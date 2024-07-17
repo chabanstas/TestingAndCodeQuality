@@ -25,6 +25,10 @@ The server persists using a SQLite3 database named `database.sqlite` in the site
 
 This project uses EditorConfic to standardize text editor configuration. Visit http://editorconfig.org for details.
 
+This project uses ESlint to detect suspicious code in JavaScript files. Visit hhtps://eslint.org for details.
+
+To run eslint auto-fix press `Ctrl+Shift+P` and type `fix all auto-fixable Problems`.
+
 ### Debugging
 
 This project uses https://www.npmjs.com/package/debug for development logging. To start `nodemon` and enable logging:
