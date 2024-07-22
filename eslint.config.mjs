@@ -24,6 +24,9 @@ export default [
       parserOptions: {
         sourceType: 'script',
       },
+      env: {
+        jest: true,
+      },
     },
     rules: {
       "no-multiple-empty-lines": "warn",
@@ -34,4 +37,6 @@ export default [
 ];
 // TODO: Fix ESlint ignore pattern
 // npx eslint . --ignore-pattern "public/contrib/*" works
-// video - 2. Finding Errors with Linting -> linting your codebase
+// video - 3. -> installing jest
+// https://www.npmjs.com/package/eslint-config-myconfig-test-1?activeTab=code
+// Set up locally public eslint config. Follow the guide https://eslint.org/docs/latest/extend/shareable-configs
