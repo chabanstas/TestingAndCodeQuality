@@ -37,6 +37,6 @@ export default [
 ];
 // TODO: Fix ESlint ignore pattern
 // npx eslint . --ignore-pattern "public/contrib/*" works
-// video - 3. -> installing jest
+// video - 3. -> running a test suite with jest
 // https://www.npmjs.com/package/eslint-config-myconfig-test-1?activeTab=code
 // Set up locally public eslint config. Follow the guide https://eslint.org/docs/latest/extend/shareable-configs
