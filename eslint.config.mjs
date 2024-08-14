@@ -37,6 +37,6 @@ export default [
 ];
 // TODO: Fix ESlint ignore pattern
 // npx eslint . --ignore-pattern "public/contrib/*" works
-// video - 4. -> 1
+// video - 5. -> 1
 // https://www.npmjs.com/package/eslint-config-myconfig-test-1?activeTab=code
 // Set up locally public eslint config. Follow the guide https://eslint.org/docs/latest/extend/shareable-configs
